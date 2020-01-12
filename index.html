@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 0;
+        }
+
+        header {
+            width: 100%;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        nav {
+            position: relative;
+            top: 100px;
+            margin: auto;
+
+        }
+
+        nav a {
+            text-decoration: none;
+            color: inherit;
+            font-size: 14px;
+        }
+
+        nav li {
+            display: inline-block;
+            width: 150px;
+            height: 30px;
+            padding: 5px 10px;
+            border: 1px solid #000;
+            text-align: center;
+            background-color: #000;
+            color: #fff;
+        }
+
+        nav li:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+        nav li>ul {
+            position: absolute;
+            left: 0px;
+            top: 30px;
+            display: block;
+        }
+
+        nav li>ul {
+            display: none;
+        }
+
+        nav li:hover>ul {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="response">
+        <input type="number" id="id_parent">
+        <table id="myTable">
+            <thead>
+
+            </thead>
+            <tbody class="cuerpo">
+
+            </tbody>
+            <tfoot></tfoot>
+        </table>
+    </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Quiénes somos</a>
+                    <ul>
+                        <li><a href="">Historia</a></li>
+                        <li><a href="">Prensa</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Servicios</a>
+                    <ul>
+                        <li><a href="">Servicio 1</a></li>
+                        <li><a href="">Servicio 2</a></li>
+                        <li><a href="">Servicio 3</a></li>
+                        <li><a href="">Servicio 4</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
